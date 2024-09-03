@@ -19,3 +19,22 @@
 // } else {
 //   alert(' Access denied ');
 // }
+
+// user = prompt('hello, what is your name? ');
+// function greetUser(name){
+//   alert(`welcome ${name}`)
+// }
+
+// greetUser(user);
+
+function showPrime(n){
+  for (let i = 1; i < n; i++){
+    if (i % 2 == 0){
+      continue
+    }    
+    console.log(i);    
+  }
+}
+
+// showPrime(10);
+
