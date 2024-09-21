@@ -13,20 +13,6 @@ const student = {
       "my name is : " + this.firstName + " " + this.otherName + " " + this.lastName
     )
   },
-  cars: [ 
-    'ferarri', 
-    'toyota', 
-    'nissan',
-    'bentley', 
-    'geely', 
-    'honda', 
-    'venza', 
-    'acura', 
-    'benz', 
-    'highlander', 
-    'lexus', 
-    'hyunda'
-  ]
 }
 
 student.class = "Gold"
