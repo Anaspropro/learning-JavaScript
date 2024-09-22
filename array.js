@@ -84,3 +84,10 @@ const myObj ={
   ]
 }
 
+// Array join(), sort() method
+
+numbers = [30, 5, 38, 22, 100, 10, 16]
+numbers.sort(function(a,b){return a - b})
+document.getElementById("demo").innerHTML = numbers.join(', ')
+
+// document.getElementById("demo").innerHTML = numbers
