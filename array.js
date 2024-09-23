@@ -1,3 +1,4 @@
+
 const cars = ['ferarri', 'toyota', 'nissan', false, 'geely', 22, 'venza', 'acura', 'benz', 'highlander', true, 'hyunda','BMW']
 
 // console.log(cars)
@@ -11,23 +12,23 @@ names[0] = "Ayub"
 
 
 // the new Array() method
-const student = new Array()
+const students = new Array()
 
-student[0] = "wahab"
-student[1] = 'Zayd'
-student[2] = "Ayub"
-student[3] = "kabir"
-student[4] = "Hamzat"
-student[5] = "Maryam"
-student[6] = "Zaynab"
+students[0] = "wahab"
+students[1] = 'Zayd'
+students[2] = "Ayub"
+students[3] = "kabir"
+students[4] = "Hamzat"
+students[5] = "Maryam"
+students[6] = "Zaynab"
 
-console.log(student)
+// console.log(student)
 
-console.log(cars.length)
-console.log(cars.sort())
+// console.log(cars.length)
+// console.log(cars.sort())
 
 const myCar = cars[cars.length - 1]
-console.log(myCar)
+// console.log(myCar)
 
 
 let carsLength = cars.length
@@ -46,13 +47,13 @@ function myFunction (value){
   text += '<li>' + value + '</li>'
 }
 
-document.getElementById("demo").innerHTML = text;
+// document.getElementById("demo").innerHTML = text;
 
 cars.push('porche')
-console.log(cars)
+// console.log(cars)
 
 cars.pop()
-console.log(cars)
+// console.log(cars)
 
 
 
@@ -66,10 +67,10 @@ console.log(cars)
 // Array.isArray()
 
 let type = Array.isArray(cars)
-console.log(type)
+// console.log(type)
 
 let instance = cars instanceof Object
-console.log(instance)
+// console.log(instance)
 
 
 
@@ -84,10 +85,41 @@ const myObj ={
   ]
 }
 
-// Array join(), sort() method
+// Day 5
+// Array method continuation
 
-numbers = [30, 5, 38, 22, 100, 10, 16]
-numbers.sort(function(a,b){return a - b})
-document.getElementById("demo").innerHTML = numbers.join(', ')
+const fruits = ['orange', 'mango', 'banana', 'cucumber', 'apple']
+console.log(fruits[fruits.length - 5])
 
-// document.getElementById("demo").innerHTML = numbers
+// array toString()
+document.getElementById("demo").innerHTML = fruits.toString()
+
+
+// Array join()
+document.getElementById("demo").innerHTML = fruits.join(", ")
+
+
+// Array at()
+// console.log(fruits.at(-1))
+
+
+// Array push() and pop()
+// console.log(fruits.pop())
+
+// Array push()
+// fruits.push('lemon')
+// console.log(fruits)
+
+// Array shift()
+
+// fruits.shift()
+// console.log(fruits)
+
+// fruits.unshift('watermelon')
+
+// Array delete
+// delete fruits[2]
+
+
+const newArray = students.concat(fruits, 'kotlin', 'JavaScript', 'android')
+console.log(newArray)
