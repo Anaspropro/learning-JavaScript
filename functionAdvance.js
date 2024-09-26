@@ -63,3 +63,51 @@ function rest (...args){
   return console.log(sum)
 }
 rest(10, 20, 30, 33, 7, 82, 3, 56 )
+
+// function call
+
+const person = {
+  firstName: 'Anas',
+  lastName: 'Aliu',
+  fullName: function(city, country){
+    return (
+      this.firstName + " " + this.lastName + " " + city + " " + country
+    )
+  }
+}
+
+const person1 = {
+  firstName: 'wahab',
+  lastName: 'lawal'
+}
+const member = {
+  firstName: 'kabeer',
+  lastName: 'balogun'
+}
+
+let answer = person.fullName.call(person1, 'lagos', 'Nigeria')
+
+console.log(answer)
+
+
+//function apply()
+console.log(person.fullName.apply(person1, ['lagos', 'Nigeria']))
+
+
+// function bind()
+let fullName = person.fullName.bind(member)
+// console.log(fullName())
+
+
+// function closure
+let counter = 0
+function add(){
+  return counter =+ 1
+}
+console.log(add())
+
+function sub(){
+  let nub = 8
+  return nub =- 1
+}
+console.log(sub())
