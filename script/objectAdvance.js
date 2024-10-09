@@ -8,7 +8,11 @@
 
 // 1. Object Literals
 const students = {
-  Ayub: {gender: 'male', age: 33, class: 'gold'},
+  Ayub: {
+    gender: 'male', 
+    age: 33, 
+    class: 'gold'
+  },
   wahab: {gender: 'male', age: 33, class:'gold'},
   zayd: {gender: 'male', age: 33, class:'gold'},
   kabeer: {gender: 'male', age: 33, class:'gold'},

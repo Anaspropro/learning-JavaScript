@@ -1,4 +1,4 @@
-body{
+/* body{
   padding-block: 20px;
   font-family: sans-serif;
   background-color: #f2f4f7;
@@ -28,4 +28,5 @@ body{
 
 .container:hover > :not(:hover){
   filter: blur(3px);
-}
+} */
+
